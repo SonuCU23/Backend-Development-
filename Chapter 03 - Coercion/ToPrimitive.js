@@ -1,11 +1,3 @@
-// let obj = {
-
-//     toString(){
-//         // by default gives [object Object]
-//         return "98";
-//     },
-
-// }
 
 /** CASE 1 */
 
@@ -57,3 +49,6 @@ console.log( 100 - obj2); // 1
 
 let obj3 = { x : 8, toString(){return "88"}};
 console.log(90 - obj3); // toSting() -> "88" -> ToNumber("88"); -> 90 - 88 = 2
+
+let obj4 = { x : 8, toString(){return {}}}; // returning empty Object
+console.log( 100 -obj4); // Can't convert into non object type hene Throw a TypeError exception. 
